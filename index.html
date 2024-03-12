@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <img src="./images/pexels-achim-bongard-352096.jpg" alt="">
+        <img src="./images/pexels-arvind-shakya-1461441.jpg" alt="">
+        <img src="./images/pexels-krivec-ales-547114.jpg" alt="">
+        <img src="./images/pexels-matheus-bertelli-577584.jpg" alt="">
+        <img src="./images/pexels-min-an-962312.jpg" alt="">
+        <img src="./images/pexels-photomix-company-96627.jpg" alt="">
+        <img src="./images/pexels-pixabay-147411.jpg" alt="">
+        <img src="./images/pexels-pixabay-358457.jpg" alt="">
+        <img src="./images/pexels-pixabay-36717.jpg" alt="">
+        <img src="./images/pexels-matheus-bertelli-577584.jpg" alt="">
+        <img src="./images/pexels-arvind-shakya-1461441.jpg" alt="">
+        <img src="./images/pexels-pixabay-147411.jpg" alt="">
+        <img src="./images/pexels-achim-bongard-352096.jpg" alt="">
+        <img src="./images/pexels-matheus-bertelli-577584.jpg" alt="">
+        <img src="./images/pexels-pixabay-36717.jpg" alt="">
+    </div>
+    <script>
+        const mainhtml=document.querySelector(".main")
+        var counter = 0;
+        setInterval(
+         ()=>{
+               for(item of mainhtml.children){
+                item.style.transform=`translateY(-${counter*400}px)`
+                console.log(counter)
+               }
+if(counter == 15){
+    counter =0
+    // console.log("vikas")
+}
+    counter++;
+            },500
+        )
+       
+
+    </script>
+</body>
+</html>
